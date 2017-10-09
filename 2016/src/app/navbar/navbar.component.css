@@ -1,0 +1,52 @@
+nav{
+    background: #e6e7e8;
+    padding: 0 1em;
+    overflow-y: hidden;
+}
+
+ul{
+    text-align: center;
+}
+
+li{
+    display: inline-block;
+    font-family: "Dala Moa Web", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-transform: lowercase;
+    padding: .5em .25em .7em;
+    margin-bottom: -.2em;
+
+}
+
+a{
+    padding: .5em;
+}
+
+@media screen and (max-width: 1100px) {
+    nav {
+        margin: auto 1em;
+        white-space: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+
+    ul {
+        width: 1100px;
+        text-align: left;
+    }
+
+    ::-webkit-scrollbar {
+        display:none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        padding-top: 55px;
+        position: fixed;
+        width: 100%;
+        margin: auto;
+        z-index: 8888;
+    }
+}

@@ -1,0 +1,54 @@
+<app-header [colors]='colors'></app-header>
+<main [style.background]='colors.full'>
+
+<div *ngIf="category" class="wrapper" (swipeleft)="toNextCat()" (swiperight)="toPrevCat()">
+
+    <header>
+        <dl>
+            <dd>
+                <a href="http://www.facebook.com/sharer.php?u={{ getCurrentUrl() }}" target="_blank"><img src="assets/icons/facebook.svg" /></a>
+            </dd>
+            <dd>
+                <a href="http://twitter.com/share?text={{ category.meta.twitter }}&url={{ getCurrentUrl() }}&hashtags=GlobalThinkers" target="_blank"><img src="assets/icons/twitter.svg" /></a>
+            </dd>
+            <dd>
+                <a href="mailto:?subject={{ category.meta.title }}&body={{ getCurrentUrl() }}" target="_blank"><img src="assets/icons/email.svg" /></a>
+            </dd>
+        </dl>
+        <h1>{{ category.title }}</h1>
+    </header>
+
+    <p [innerHtml]="category.body"></p>
+
+    <ul>
+        <li *ngFor="let person of category.entries" [hidden]="person.type != 'thinker'">
+          <a routerLink="/profile/{{ person.slug }}"><img class="catProfile" src="{{ person.crop_image[0] }}" /></a>
+          <div id="catTextbox">
+          <h2><a routerLink="/profile/{{ person.slug }}">{{ person.name }}</a></h2>
+          <h3>{{ person.dek }}</h3>
+          <p class="reason">{{ person.reason }}</p>
+          </div>
+        </li>
+    </ul>
+
+    <div class="to-next" (click)="toNextCat()">
+        <img src="assets/icons/right.svg" alt="next category" />
+        <span class="show-on-hover">{{ nextCatName }}</span>
+    </div>
+
+    <div class="to-prev" (click)="toPrevCat()">
+        <img src="assets/icons/left.svg" />
+        <span class="show-on-hover">{{ prevCatName }}</span>
+    </div>
+
+    <!--<div class="to-profiles" *ngFor="let firstPerson of category.entries | slice:0:1">
+        <a routerLink="/profile/{{ firstPerson.id }}">
+            <img class="to-next-img" src="assets/icons/down.svg" alt="to profiles" />
+            <span class="show-on-hover">{{ firstPerson.name }}</span>
+        </a>
+    </div>-->
+
+</div>
+
+</main>
+<app-footer></app-footer>

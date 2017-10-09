@@ -1,0 +1,33 @@
+[{
+    "title" : "Chroniclers",
+    "description" : "Lorem ipsum sit amet conseguir...",
+    "sponsor": {
+        "name": "HSBC",
+        "logo": "/assets/hsbc-logo.jpg"
+    },
+    "people": [{
+            "id": "123123",
+            "name": "Name Here",
+            "title": "Title",
+            "organization": "Company",
+            "country": "United States",
+            "description": "Lorem ipsum sit amet...",
+            "profileImage": "http://placehold.it/200x200"
+        },{
+            "id": "234234",
+            "name": "Name Here",
+            "title": "Title",
+            "organization": "Company",
+            "country": "United States",
+            "description": "Lorem ipsum sit amet...",
+            "profileImage": "http://placehold.it/200x200"
+        },{
+            "id": "345435",
+            "name": "Name Here",
+            "title": "Title",
+            "organization": "Company",
+            "country": "United States",
+            "description": "Lorem ipsum sit amet...",
+            "profileImage": "http://placehold.it/200x200"
+    }]
+}]

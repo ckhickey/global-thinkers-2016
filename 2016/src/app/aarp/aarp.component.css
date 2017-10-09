@@ -1,0 +1,146 @@
+.viewport {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.0em;
+}
+
+.aarp-categories {
+    margin: 2em auto;
+    /*max-width: 980px;*/
+    max-width: 800px;
+}
+
+.aarplogo {
+    margin: 0.5em auto 1.5em;
+    max-width: 275px;
+    display: block;
+}
+
+.winnerpic {
+    width: 100%;
+}
+
+dl {
+    float: left;
+    list-style: none;
+    position: relative;
+    /*max-width: 450px;*/
+    margin: 0 1.25em 3em;
+    text-align: left;
+    border-bottom: 2px solid #000;
+    padding-bottom: 2.5em;
+}
+
+h1 {
+    font-size: 4.0em;
+    font-family: "Dala Moa Web", Arial, Helvetica, sans-serif;
+    /*padding-bottom: 0.25em;*/
+}
+
+h1, h3, p {
+    text-align: center;
+}
+
+dt {
+    font-family: "Solido Condensed";
+    font-weight: 700;
+    font-size: 4.7em;
+    line-height: 0.9em;
+    text-transform: uppercase;
+    /*margin: 0.7em auto 0.1em;*/
+    margin: 0.3em auto 0.1em;
+}
+
+dd {
+    font-family: "Tiempos", Georgia, Times, serif;
+    padding: 0.25em auto;
+}
+
+.ddProfile {
+    text-transform: none;
+    font-size: 0.85em;
+    line-height: 1.5em;
+}
+
+.header {
+    font-weight: 700;
+    font-size: 1.7em;
+    line-height: 1.1em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    margin: 0.3em auto;
+    border-top: 1px solid #111;
+    border-bottom: 1px solid #111;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+dd >>> a {
+    color: #ee2431;
+}
+
+dd >>> em {
+    font-style: italic;
+}
+
+ul {
+    margin: 0.5em auto 4em;
+    width: 120px;
+}
+
+li {
+    float: left;
+}
+
+li img {
+    width: 40px;
+    height: 40px;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .header {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    dl {
+        margin: 0 20% 3em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    dl {
+        margin: 0 1.25em 5em;
+    }
+
+    #aarpWrapper {
+        padding: 4em 5%;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .aarplogo {
+        max-width: 175px;
+    }
+
+    .header {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 2.0em;
+    }
+}

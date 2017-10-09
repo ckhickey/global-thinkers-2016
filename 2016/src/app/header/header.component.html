@@ -1,0 +1,11 @@
+<header>
+  <a routerLink="/">
+    <img [hidden]='isHome' class="gtlogo" src="assets/icons/GT2016_logo-01.svg" />
+    <img [hidden]='!isHome' class="gtlogo home" src="assets/icons/FP_logo.svg" />
+  </a>
+  <!--<img class="sponsorlogo" src="assets/icons/HSBC_logo.png" />
+  <p class="sponsor">Sponsored by</p>-->
+  <app-menu></app-menu>
+</header>
+
+<app-navbar [isHome]='isHome' [colors]='colors' [currentCat]="currentCat"></app-navbar>

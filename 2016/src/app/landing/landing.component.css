@@ -1,0 +1,63 @@
+.landing-categories{ background: #F3EDD6; }
+
+dl, ul {
+    float: left;
+    list-style: none;
+    position: relative;
+    max-width: 1000px;
+    margin-right: 10px;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+    text-align: left;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+li {
+    width: 480px;
+    float: left;
+}
+
+dt, h2 {
+    font-size: 2.0em;
+    padding-bottom: 0.25em;
+}
+
+h1 {
+    padding-bottom: 1em;
+}
+
+h3 {
+    padding-top: 1em;
+    font-weight: 700;
+}
+
+.aarplogo {
+    max-width: 150px;
+    float: none;
+    transform: none!important;
+    padding-bottom: 1em;
+}
+
+p {
+    padding: 0 1em;
+}
+
+.aarp{ background: #FFBBBB; }
+/* category background colors are pulled from the data source */
+
+.title{
+    font-family: "Dala Moa Web", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.essay .title{
+    font-family: "Tiempos";
+    font-weight: 800;
+}
+
+.promo >>> .more {
+    font-family: "Solido";
+    font-weight: 700;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}

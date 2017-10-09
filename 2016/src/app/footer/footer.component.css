@@ -1,0 +1,37 @@
+footer{
+    clear: both;
+    background-color: #111;
+}
+
+/*.sponsorlogo {
+    display: none;
+}
+
+h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 0.7em;
+    margin-bottom: 0.25em;
+}
+
+@media screen and (max-width: 480px) {
+    footer {
+        padding: 1em 35% 1em;
+        position: fixed;
+        bottom: 0;
+    }
+
+    .sponsorlogo {
+        display: block;
+    }
+
+    img {
+        max-width: 130px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    img {
+        max-width: 100px;
+    }
+}*/

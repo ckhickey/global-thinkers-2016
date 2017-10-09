@@ -1,0 +1,60 @@
+<app-header [colors]='colors' [currentCat]="currentCat"></app-header>
+<main [style.background]="colors.half">
+
+<app-profile-nav [group]="this.group" [colors]="colors" [routeID]="this.routeID" [animate]="this.animate"></app-profile-nav>
+<div *ngIf="profile" class="wrapper" (swipeleft)="toNextProfile()" (swiperight)="toPrevProfile()">
+    <div id="explainer">
+    <h3 class="explainertext"><a routerLink="/category/{{ profile.category_slug }}">Click here to see all of {{profile.category_title}}</a></h3>
+    </div>
+
+    <div class="profile-wrapper">
+
+    <div class="profile-photo">
+        <img src="{{ profile.main_image[0] + '?w=500'}}" />
+        <ul>
+            <li>
+                <a href="http://www.facebook.com/sharer.php?u={{ getCurrentUrl() }}&description={{ profile.meta.summary }}" target="_blank"><img src="assets/icons/facebook.svg" /></a>
+            </li>
+            <li>
+                <a href="http://twitter.com/share?text={{ profile.meta.twitter }}&url={{ getCurrentUrl() }}&hashtags=GlobalThinkers" target="_blank"><img src="assets/icons/twitter.svg" /></a>
+            </li>
+            <li>
+                <a href="mailto:?subject={{ profile.meta.title }}&body={{ getCurrentUrl() }}" target="_blank"><img src="assets/icons/email.svg" /></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="profile-content">
+        <h5>{{ profile.category_title }}</h5>
+        <h2>{{ profile.name }}</h2>
+        <h3>{{ profile.dek }}</h3>
+        <div class="headerbox">
+        <p class="header">{{ profile.reason }}</p>
+        </div>
+        <div class="articlebox">
+        <article [innerHtml]="profile.body"></article>
+        </div>
+        <dl class="facts">
+          <h3>Notable Facts:</h3>
+          <div [innerHtml]="profile.notables"></div>
+        </dl>
+    </div>
+
+    <img class="hidden-lazy-load" src="{{ loadNextImage }}" />
+    <img class="hidden-lazy-load" src="{{ loadPrevImage }}" />
+
+    </div><!--.profile-wrapper-->
+
+    <div [hidden]="nextID == ''" class="to-next" (click)="toNextProfile()">
+        <img class="to-next-img" src="assets/icons/right.svg" />
+        <span class="show-on-hover">{{ nextName }}</span>
+    </div>
+
+    <div [hidden]="prevID == ''" class="to-prev" (click)="toPrevProfile()">
+        <img class="to-prev-img" src="assets/icons/left.svg" />
+        <span class="show-on-hover">{{ prevName }}</span>
+    </div>
+
+</div>
+</main>
+<app-footer></app-footer>

@@ -1,0 +1,107 @@
+{% extends "static_templates/master.html" %}
+{% block head %}
+  {{ super() }}
+  {% include "static_templates/meta_twitter.html" %}
+  {% include "static_templates/meta_site_name.html" %}
+
+  <meta property="og:url" content="https://gt.foreignpolicy.com/2016/essay/{{ slug }}">
+  {% if meta.title %}
+    <meta property="og:title" content="{{ meta.title }}">
+  {% else %}
+    <meta property="og:title" content="{{ title }}">
+  {% endif %}
+
+  {% if meta.image %}
+    {% include "static_templates/meta_image.html" %}
+  {% elif main_image %}
+    {% include "static_templates/meta_image_fallback.html" %}
+  {% endif %}
+
+  {% if meta.summary %}
+    <meta property="og:description" content="{{ meta.summary }}">
+    <meta name="description" content="{{ meta.summary }}">
+  {% else %}
+    <meta property="og:description" content="{{ dek }}">
+    <meta name="description" content="{{ dek }}">
+  {% endif %}
+
+  <link rel="canonical" href="https://gt.foreignpolicy.com/2016/essay/{{ slug }}">
+
+  <title>
+  {% if site_meta %}
+    {% if site_meta.site_title %}
+      {{ site_meta.site_title }} - {{ title }}
+    {% else %}
+      Foreign Policy Global Thinkers 2016 - {{ title }}
+    {% endif %}
+  {% else %}
+    Foreign Policy Global Thinkers 2016 - {{ title }}
+  {% endif %}
+  </title>
+{% endblock %}
+
+{% block content %}
+  {{ super() }}
+  <h1>{{ title }}</h1>
+  <h2>{{ dek }}</h2>
+  <div class="byline">
+  {% for author in authors %}
+    <address>By <span class="author">{{ author.name }}</span></address>
+  {% endfor %}
+  </div>
+  <div>
+  {% if main_image %}
+    <img
+      src="{{ main_image[0] }}"
+      alt="{{ title }}">
+  {% endif %}
+    {{ body|safe }}
+    <div class="credits">
+      <h6>Image credits</h6>
+    {% for illustrator in illustrators %}
+      <address>By <span class="illustrator">{{ illustrator.name }}</span></address>
+    {% endfor %}
+    </div>
+  </div>
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://gt.foreignpolicy.com/2016/essay/{{ slug }}"
+    },
+    "headline": {{ title|tojson|safe }},
+  {% if main_image %}
+    "image": {
+      "@type": "ImageObject",
+      "url": {{ main_image[0]|tojson|safe }},
+      "height": {{ main_image[2]|tojson|safe }},
+      "width": {{ main_image[1]|tojson|safe }}
+    },
+  {% endif %}
+    "datePublished": "2016-12-12T08:00:00+08:00",
+  {% if authors %}
+    "author": {
+      "@type": "Person",
+      "name": {{ authors[0].name|tojson|safe }}
+    },
+  {% endif %}
+    "publisher": {
+      "@type": "Organization",
+      "name": "Foreign Policy",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://foreignpolicymag.files.wordpress.com/2016/04/logo.png",
+        "width": 74,
+        "height": 60
+      }
+    },
+  {% if meta.summary %}
+    "description": {{ meta.summary|tojson|safe }}
+  {% else %}
+    "description": {{ dek|tojson|safe }}
+  {% endif %}
+  }
+  </script>
+{% endblock %}

@@ -1,0 +1,97 @@
+[{
+    "title" : "Artists",
+    "description" : "Across a range of media -- rap, opera, sculpture, filmmaking, and more -- these Global Thinkers are bound by the belief that art serves a higher purpose. They have challenged the Islamic State with verses, staged apocalyptic scenes to warn of the dangers of pollution, bent the constraints of theatrical genres to illuminate new creative pathways, and built a distorted theme park that scrutinized the failures of Western culture. If all the world's a stage, these individuals have trained spotlights on pressing issues and viewpoints that demand more of the global audience's attention.",
+    "sponsor": {
+        "name": "HSBC",
+        "logo": "/assets/hsbc-logo.jpg"
+    },
+    "people": [{
+            "id": "11",
+            "name": "Alejandro Aravena",
+            "title": "Title",
+            "organization": "Company",
+            "country": "United States",
+            "description": "Lorem ipsum sit amet...",
+            "profileImage": "http://placehold.it/200x200"
+        },{
+            "id": "12",
+            "name": "el Seed",
+            "title": "Title",
+            "organization": "Company",
+            "country": "United States",
+            "description": "Lorem ipsum sit amet...",
+            "profileImage": "http://placehold.it/200x200"
+        },{
+            "id": "13",
+            "name": "Himanshu Suri and Riz Ahmed",
+            "title": "Title",
+            "organization": "Company",
+            "country": "United States",
+            "description": "Lorem ipsum sit amet...",
+            "profileImage": "http://placehold.it/200x200"
+        },{
+            "id": "14",
+            "name": "Moreshin Allahyari",
+            "title": "Title",
+            "organization": "Company",
+            "country": "United States",
+            "description": "Lorem ipsum sit amet...",
+            "profileImage": "http://placehold.it/200x200"
+        },{
+            "id": "15",
+            "name": "Warsan Shire",
+            "title": "Title",
+            "organization": "Company",
+            "country": "United States",
+            "description": "Lorem ipsum sit amet...",
+            "profileImage": "http://placehold.it/200x200"
+        },{
+            "id": "16",
+            "name": "Walid Raad",
+            "title": "Title",
+            "organization": "Company",
+            "country": "United States",
+            "description": "Lorem ipsum sit amet...",
+            "profileImage": "http://placehold.it/200x200"
+        },{
+            "id": "17",
+            "name": "Anohni",
+            "title": "Title",
+            "organization": "Company",
+            "country": "United States",
+            "description": "Lorem ipsum sit amet...",
+            "profileImage": "http://placehold.it/200x200"
+        },{
+            "id": "18",
+            "name": "Dada Masilo",
+            "title": "Title",
+            "organization": "Company",
+            "country": "United States",
+            "description": "Lorem ipsum sit amet...",
+            "profileImage": "http://placehold.it/200x200"
+        },{
+            "id": "19",
+            "name": "Elza Soares",
+            "title": "Title",
+            "organization": "Company",
+            "country": "United States",
+            "description": "Lorem ipsum sit amet...",
+            "profileImage": "http://placehold.it/200x200"
+        },{
+            "id": "20",
+            "name": "Ivo Van Hove",
+            "title": "Title",
+            "organization": "Company",
+            "country": "United States",
+            "description": "Lorem ipsum sit amet...",
+            "profileImage": "http://placehold.it/200x200"
+        },{
+            "id": "21",
+            "name": "Vanessa Lucas-Smith",
+            "title": "Title",
+            "organization": "Company",
+            "country": "United States",
+            "description": "Lorem ipsum sit amet...",
+            "profileImage": "http://placehold.it/200x200"
+    }]
+}]

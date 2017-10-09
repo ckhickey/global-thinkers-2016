@@ -1,0 +1,69 @@
+application: gt-base
+version: alpha-001
+runtime: python27
+api_version: 1
+threadsafe: true
+
+skip_files:
+- ^(.*/)?app\.yaml
+- ^(.*/)?app\.yml
+- ^(.*/)?#.*#
+- ^(.*/)?.*~
+- ^(.*/)?.*\.py[co]
+- ^(.*/)?.*/RCS/.*
+- ^(.*/)?\..*
+- ^(.*/)?tests?/(.*/)?
+- ^(.*/)?tests?$
+- \.*\.lint$
+- ^(.*/)?fabfile\.py
+- ^(.*/)?testrunner\.py
+- ^(.*/)?bin/(.*/)?
+- ^(.*/)?\.git(ignore|modules)
+- ^(.*/)?\.git/.*
+- ^(.*/)?\.editorconfig
+- ^(.*/)?COPYING.LESSER
+- ^(.*/)?README\..*
+- ^(.*/)?grunt\.js
+- ^(.*/)?angular-cli\.json
+- ^(.*/)?karma\.conf\.js
+- ^(.*/)?package\.json
+- ^(.*/)?protractor\.conf\.js
+- ^(.*/)?tslint\.json
+- ^(.*/)?node_modules/(.*/)?
+- ^(.*/)?npm-debug\.log
+- ^2016/(e2e|src)/.*
+
+env_variables:
+  BASIC_AUTH: false
+  BASIC_AUTH_USERNAME: 'gt'
+  BASIC_AUTH_PASSWORD: 'sandw1ch'
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+- url: /favicon-192\.png
+  static_files: favicon-192.png
+  upload: favicon-192\.png
+- url: /favicon-256\.png
+  static_files: favicon-256.png
+  upload: favicon-256\.png
+- url: /google5d0a6e292e792423\.html
+  static_files: google5d0a6e292e792423.html
+  upload: google5d0a6e292e792423\.html
+- url: /2016/app/data/(.*\.json)$
+  static_files: 2016/dist/app/data/\1
+  upload: 2016/dist/app/data/.*\.json$
+  application_readable: true
+- url: /2016/assets/(.*\.(css|gif|jpeg|jpg|png|svg|ts|ttf|woff))$
+  static_files: 2016/dist/assets/\1
+  upload: 2016/dist/assets/.*\.(css|gif|jpeg|jpg|png|svg|ts|ttf|woff)$
+- url: /2016/lib/(.*\.js)$
+  static_files: 2016/dist/lib/\1
+  upload: 2016/dist/lib/.*\.js$
+- url: /2016/(.*\.(css|gz|js|ttf|woff))$
+  static_files: 2016/dist/\1
+  upload: 2016/dist/.*\.(css|gz|js|ttf|woff)$
+- url: .*
+  script: main.APP
+  secure: always

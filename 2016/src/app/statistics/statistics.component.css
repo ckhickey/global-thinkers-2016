@@ -1,0 +1,107 @@
+.viewport {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.0em;
+}
+
+.statPics {
+    margin: 2em auto;
+    /*max-width: 980px;*/
+    max-width: 800px;
+}
+
+.statpic {
+    width: 100%;
+}
+
+dl {
+    float: left;
+    list-style: none;
+    position: relative;
+    /*max-width: 450px;*/
+    margin: 0 1.25em 3em;
+    text-align: left;
+    border-bottom: 2px solid #000;
+    padding-bottom: 2.5em;
+}
+
+h1 {
+    font-size: 4.0em;
+    font-family: "Dala Moa Web", Arial, Helvetica, sans-serif;
+    /*padding-bottom: 0.25em;*/
+}
+
+h1, h3, p {
+    text-align: center;
+}
+
+.header {
+    font-weight: 700;
+    font-size: 1.7em;
+    line-height: 1.1em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    margin: 0.3em auto;
+    border-top: 1px solid #111;
+    border-bottom: 1px solid #111;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    margin: 2em auto 4em;
+    width: 120px;
+}
+
+li {
+    float: left;
+}
+
+li img {
+    width: 40px;
+    height: 40px;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .header {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    dl {
+        margin: 0 20% 3em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    dl {
+        margin: 0 1.25em 5em;
+    }
+
+    #stats {
+        padding: 4em 5%;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .header {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 2.0em;
+    }
+}

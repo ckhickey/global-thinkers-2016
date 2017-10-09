@@ -1,0 +1,9 @@
+<nav *ngIf="!this.isHome">
+  <ul>
+    <li *ngFor="let cat of categories" [style.background]="isActive( cat.slug )">
+      <a routerLink="/category/{{ cat.slug }}">
+        {{ cat.title }}
+      </a>
+    </li>
+  </ul>
+</nav>

@@ -1,0 +1,30 @@
+[{
+    "id": "personkey1",
+    "name": "Name Here",
+    "category": "Advocates",
+    "title": "Title",
+    "organization": "Company",
+    "country": "United States",
+    "description": "Lorem ipsum sit amet...",
+    "profileImage": "http://placehold.it/200x200",
+    "fullImage": "http://placehold.it/800x600",
+    "article": "<header class='articleHed'>For endaepub itametur, con cus, ni.</header><p>Ecta quiandis milit...</p>",
+    "facts": ["Lorem ispum sit.", "Another fact here.", "Here's another fact."],
+    "birthplace": "Elizabeth City, North Carolina",
+    "sponsor": {
+    	"name": "Chevron",
+    	"logo": "/assets/chevron-logo.jpg"
+    },
+    "social": [
+            {
+    	        "name" : "facebook",
+                "url" : "https://facebook.com/link"
+            },{
+    	        "name" : "twitter",
+                "url" : "https://twitter.com/link"
+            },{
+                "name" : "email",
+                "url" : "namehere@gmail.com"
+            }
+    ]
+}]

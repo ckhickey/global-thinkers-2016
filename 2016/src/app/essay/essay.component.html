@@ -1,0 +1,34 @@
+<app-header></app-header>
+<main>
+<div *ngIf="essay" [ngClass]='essay.type'>
+    <div class="wrapper">
+        <div class="essaybody">
+            <h5>essay</h5>
+
+            <h1>{{ essay.title }}</h1>
+            <h2>{{ essay.dek }}</h2>
+            <dl>
+                <dt *ngFor="let authors of essay.authors" class="dtAuthor">By {{ authors.name }} | </dt>
+                <dt *ngFor="let illustrators of essay.illustrators" class="dtAuthor">&nbsp;Illustration By {{ illustrators.name }}</dt>
+            </dl>
+
+            <div class="photo">
+                <img src="{{ essay.main_image[0] }}" />
+            </div>
+            <ul class="social">
+                <li>
+                    <a href="http://www.facebook.com/sharer.php?u={{ getCurrentUrl() }}" target="_blank"><img src="assets/icons/facebook.svg" /></a>
+                </li>
+                <li>
+                    <a href="http://twitter.com/share?text={{ essay.title }}&url={{ getCurrentUrl() }}" target="_blank"><img src="assets/icons/twitter.svg" /></a>
+                </li>
+                <li>
+                    <a href="mailto:?subject={{ essay.title }}&body={{ getCurrentUrl() }}" target="_blank"><img src="assets/icons/email.svg" /></a>
+                </li>
+            </ul>
+            <article [innerHtml]="essay.body" style="white-space:pre-wrap;"></article>
+        </div>
+    </div>
+</div>
+</main>
+<app-footer></app-footer>

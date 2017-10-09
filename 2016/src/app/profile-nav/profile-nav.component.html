@@ -1,0 +1,16 @@
+<ul id="profile-nav">
+    <div id="nav-wrapper">
+        <li *ngFor="let person of group">
+            <a
+                #listItem
+                [ngClass]="{ active: isActive(person.slug) }" 
+                (click)="navigate(person.slug)"
+                [style.background]="getColor(person.slug)"
+            >
+                    {{ person.name }}
+            </a>
+        </li>
+    </div>
+    <span class="nav-fade-right" [style.background]="applyGradient('left')"></span>
+    <span class="nav-fade-left" [style.background]="applyGradient('right')"></span>
+</ul>

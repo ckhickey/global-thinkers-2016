@@ -1,0 +1,130 @@
+[{
+    "group": "decisionmakers",
+    "people": [{
+            "id": 1,
+            "name": "Hillary Clinton"
+        },{
+            "id": 2,
+            "name": "Ban Ki-Moon"
+        },{
+            "id": 3,
+            "name": "Angela Merkel"
+        },{
+            "id": 4,
+            "name": "Loretta Lynch"
+    }]
+},{
+    "group": "challengers",
+    "people": [{
+            "id": 5,
+            "name": "Leila de Lima"
+        },{
+            "id": 6,
+            "name": "Alexander Betts and Paul Collier"
+        },{
+            "id": 7,
+            "name": "Geraldine Roman"
+        },{
+            "id": 8,
+            "name": "Nathan Law"
+    }]
+},{
+    "group": "innovators",
+    "people": [{
+            "id": 9,
+            "name": "Chandani Doshi, Grace Li, Jialin Shi, Bonnie Wang, Charlene Xia, and Tania Yu"
+        },{
+            "id": 10,
+            "name": "Fedros Okumu"
+        },{
+            "id": 11,
+            "name": "Sarah Parcak"
+        },{
+            "id": 12,
+            "name": "Jehiel Oliver"
+        },{
+            "id": 13,
+            "name": "Amin Salehi-Khojin"
+        },{
+            "id": 14,
+            "name": "Jeannette Garcia and Gavin Jones"
+        },{
+            "id": 15,
+            "name": "Stefanie Tellex and John Oberlin"
+        }]
+},{
+    "group": "advocates",
+    "people": [{
+            "id": 16,
+            "name": "Nadia Murad Basee Taha"
+        },{
+            "id": 17,
+            "name": "Marc Edwards"
+        },{
+            "id": 18,
+            "name": "Debora Diniz"
+        },{
+            "id": 19,
+            "name": "Tegla Laroupe"
+        },{
+            "id": 20,
+            "name": "Gou Hongguo, Zhou Shifeng, Hu Shigen, and Zhai Yanmin"
+        }]
+},{
+    "group": "artists",
+    "people": [{
+            "id": 21,
+            "name": "Rizwan Ahmed and Himanshu Suri"
+        },{
+            "id": 22,
+            "name": "Moreshin Allahyari"
+        },{
+            "id": 23,
+            "name": "Anohni"
+        },{
+            "id": 24,
+            "name": "Alejandro Aravena"
+        },{
+            "id": 25,
+            "name": "El Seed"
+        }]
+},{
+    "group": "healers",
+    "people": [{
+            "id": 26,
+            "name": "Raed al Saleh"
+        },{
+            "id": 27,
+            "name": "Roger Nitsch and Alfred Sandrock"
+        },{
+            "id": 28,
+            "name": "Petra Vertes and Kirstie Whitaker"
+        },{
+            "id": 29,
+            "name": "Dorry Segev and Peter Stock"
+        },{
+            "id": 30,
+            "name": "Hans Flu"
+        },{
+            "id": 31,
+            "name": "Klavs Jensen, Timothy Jamison, and Allan Myerson"
+        }]
+},{
+    "group": "stewards",
+    "people": [{
+            "id": 33,
+            "name": "David Archambault II"
+        }]
+},{
+    "group": "chroniclers",
+    "people": [{
+            "id": 34,
+            "name": "Smriti Keshari and Eric Schlosser, Lynette Wallworth"
+        }]
+},{
+    "group": "moguls",
+    "people": [{
+            "id": 35,
+            "name": "Zainab Salbi"
+        }]
+}]

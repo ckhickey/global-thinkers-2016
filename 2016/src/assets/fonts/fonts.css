@@ -1,0 +1,81 @@
+/*Webfonts*/
+
+@font-face {
+    font-family: "Dala Moa Web";
+    src:url('DalaMoa-Bold-Web.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: Solido;
+  font-style: normal;
+  font-weight: 400;
+  src: url('solido-medium-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: Solido;
+  font-style: normal;
+  font-weight: 800;
+  src: url('solido-extrabold-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Solido Condensed';
+  font-style: normal;
+  font-weight: 600;
+  src: url('solidocondensed-bold-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Solido Medium Italic';
+  font-style: italic;
+  font-weight: 500;
+  src: url('solido-mediumitalic-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: Tiempos;
+  font-style: normal;
+  font-weight: 400;
+  src: url('TiemposTextWeb-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: Tiempos;
+  font-style: italic;
+  font-weight: 400;
+  src: url('TiemposWebLF-RegularItalic.ttf') format('woff');
+}
+
+@font-face {
+  font-family: Tiempos;
+  font-style: normal;
+  font-weight: 500;
+  src: url('tiempostext-medium-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: Tiempos;
+  font-style: normal;
+  font-weight: 600;
+  src: url('TiemposHeadlineWeb-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: Tiempos;
+  font-style: italic;
+  font-weight: 600;
+  src: url('TiemposHeadlineWeb-MediumItalic.ttf') format('woff');
+}
+
+
+@font-face {
+  font-family: Tiempos;
+  font-style: normal;
+  font-weight: 700;
+  src: url('TiemposHeadWeb-Semibold.woff') format('woff');
+}
+
+/*End Webfonts*/

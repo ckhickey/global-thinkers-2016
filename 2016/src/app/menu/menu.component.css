@@ -1,0 +1,212 @@
+nav{
+    background: #e6e7e8;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    zoom: 1;
+    display: none;
+    z-index: 9999;
+    border-bottom: 1px solid #000;
+    overflow: scroll;
+}
+
+svg{
+    width: 26px;
+    height: 26px;
+}
+
+svg g{
+    fill: #fff;
+}
+
+nav.is-visible{
+    display: block;
+}
+
+nav:after{
+    content: '';
+    height: 0;
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+
+.global-thinkers, .wrapper > * {
+    border-bottom: 1px solid #000;
+}
+
+.borderpadding {
+    padding-bottom: 1.5em;
+}
+
+.global-thinkers {
+    height: 630px;
+    margin: auto 2em;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.viewport {
+    width: 1900px;
+    position: relative;
+    height: 610px;
+}
+
+dl {
+    float: left;
+    list-style: none;
+    position: relative;
+    width: 200px;
+    margin-right: 10px;
+    margin-bottom: 2em;
+    text-align: left;
+}
+
+dt, h1, h2, h3, p {
+    color: #111;
+}
+
+dt {
+    font-size: 1.0em;
+    font-family: "Solido", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+li {
+    width: 320px;
+    margin-right: 10px;
+}
+
+dd a{
+    display: inline-block;
+    font-family: "Solido Condensed", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: .5em 1em .1em 0;
+    font-size: 1.2em;
+}
+
+.menu-link{
+    position: absolute;
+    left: 1em;
+    top: 0;
+    padding: 1em;
+    max-width: 40px;
+}
+
+h2, h5 {
+    padding: 0.5em 0 0.25em;
+}
+
+h1 {
+    font-size: 2.4em;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+.essayHed {
+    padding: 0.5em 0 0.3em;
+}
+
+h3 {
+    padding-bottom: 2.0em;
+}
+
+.aarpH3 {
+    font-size: 0.6em;
+    font-weight: 700;
+    padding: 0;
+}
+
+.essayAuthor {
+    font-weight: 700;
+    font-size: 0.85em;
+    padding-top: 0.75em;
+}
+
+h5 {
+    color: #111;
+    font-size: 1.5em;
+}
+
+.essaybox {
+    padding: 0.2em 0;
+}
+
+.tableCell {
+    display: table-cell;
+    padding: 0.5em;
+}
+
+img {
+    width: 100%;
+}
+
+.aarplogo {
+    max-width: 200px;
+    padding-bottom: 0.5em;
+}
+
+@media screen and (max-width: 1100px) {
+    .wrapper {
+        padding: 1em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    h2 {
+        font-size: 1.3em;
+    }
+
+    h1 {
+        font-size: 1.7em;
+    }
+
+    h5 {
+        font-size: 1em;
+    }
+
+    .aarplogo {
+        max-width: 160px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .tableCell {
+        display: block;
+    }
+
+    .aarplogo {
+        margin-bottom: 0;
+        max-width: 130px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 0.8em;
+        padding: 0.5em 0 2em;
+    }
+
+    li {
+        width: auto;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    #toptext {
+        margin-top: 1em;
+    }
+}

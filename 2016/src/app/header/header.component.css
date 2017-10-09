@@ -1,0 +1,61 @@
+header{
+    background: #111;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    position: relative;
+}
+
+h1 a, .sponsor {
+    color: #fff;
+}
+
+/*a {
+    margin-right: -10em;
+}*/
+
+.sponsor {
+    font-size: 0.7em;
+    float: right;
+    padding-top: 0.5em;
+}
+
+.gtlogo {
+    width: 200px;
+}
+
+.gtlogo.home{
+    width: 50px;
+}
+/*.sponsorlogo {
+    width: 100px;
+    float: right;
+    padding-left: 0.5em;
+}*/
+
+@media screen and (max-width: 480px) {
+    /*.sponsor, .sponsorlogo {
+        display: none;
+    }*/
+
+    .gtlogo {
+        /*margin-left: 50%;
+        margin-right: 25%;*/
+    }
+
+    .gtlogo.home {
+        margin-left: 0;
+    }
+
+    header {
+        padding: 1em 10em 1em 1em;
+        position: fixed;
+        z-index: 9998;
+        width: 100%;
+    }
+
+    a {
+        /*margin-right: -10%;
+        margin-left: -10%;*/
+    }
+}

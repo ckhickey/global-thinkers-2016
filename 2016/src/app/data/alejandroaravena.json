@@ -1,0 +1,33 @@
+[{
+    "id": "11",
+    "name": "Alejandro Aravena",
+    "category": "Artists",
+    "title": "Title",
+    "organization": "Company",
+    "country": "United States",
+    "description": "Alejandro Aravena is an artist who does such and such...",
+    "profileImage": "http://placehold.it/200x200",
+    "fullImage": "http://placehold.it/800x600",
+    "article": "<header>For endaepub itametur, con cus, ni.</header><p>Upon entering the castle, visitors were confronted by an accident. Cinderella's carriage had crashed; she and her horses were dead. In a scene that evoked the death of a real-life princess -- Diana -- paparazzi wildly documented the carnage.</p><p>This grim, life-size sculpture was created by Banksy at Dismaland, a 'family theme park unsuitable for small children' that the famous street artist opened in England for just over a month this summer. The sardonic take on Disney's amusement empire, which included works by dozens of contributing artists, was Banksy's biggest project to date -- and among the artist's most timely and political. In one instalation, small, remote-controlled boats carried figurine migrants on a faux waterway. And when Dismaland closed, many of its materials were shipped to France to help build shelters for refugees near Calais.</p><p>For Banksy, whose identity remains unknown, the cookie-cutter family vacation proved yet another canvas for critiquing the modern condition.",
+    "facts": ["Lorem ispum sit.", "Another fact here.", "Here's another fact."],
+    "birthplace": "Elizabeth City, North Carolina",
+    "sponsor": {
+    	"name": "Chevron",
+    	"logo": "/assets/chevron-logo.jpg"
+    },
+    "social": [
+            {
+    	        "name" : "facebook",
+                "url" : "https://facebook.com/link",
+                "img" : "../../assets/icons/facebook.svg"
+            },{
+    	        "name" : "twitter",
+                "url" : "https://twitter.com/link",
+                "img" : "../../assets/icons/twitter.svg"
+            },{
+                "name" : "email",
+                "url" : "namehere@gmail.com",
+                "img" : "../../assets/icons/email.svg"
+            }
+    ]
+}]

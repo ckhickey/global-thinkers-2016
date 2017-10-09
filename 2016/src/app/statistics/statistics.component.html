@@ -1,0 +1,29 @@
+<app-header></app-header>
+<main>
+<div *ngIf="stats" class="statistics">
+    <div class="wrapper">
+    <div class="viewport">
+        <h1>2016 global thinker statistics</h1>
+        <ul>
+            <li>
+                <a href="http://www.facebook.com/sharer.php?u={{ getCurrentUrl() }}" target="_blank"><img src="assets/icons/facebook.svg" /></a>
+            </li>
+            <li>
+                <a href="http://twitter.com/share?text=There%20were%2071%20women%20and%2069%20men%20on%20this%20year%27s%20list%20of%20leading%20%23GlobalThinkers.%20Learn%20more:&url={{ getCurrentUrl() }}" target="_blank"><img src="assets/icons/twitter.svg" /></a>
+            </li>
+            <li>
+                <a href="mailto:?subject=By%20the%20Numbers%20-%20Global%20Thinkers%202016&body={{ getCurrentUrl() }}" target="_blank"><img src="assets/icons/email.svg" /></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="statPics">
+        <dl *ngFor="let pics of stats">
+            <img class="statpic" src="{{ pics.image }}">
+        </dl>
+        <p style="font-style:italic;">Of the 2016 Global Thinkers, 3 ages and 10 birthplaces could not be confirmed and therefore are not included in the above graphics.</p>
+    </div>
+</div>
+</div>
+</main>
+<app-footer></app-footer>

@@ -1,0 +1,28 @@
+[{
+    "id": "11",
+    "category": "Artists",
+    "headline": "The Man Going Back",
+    "subhed": "Tens of millions of people are displaced around the world. I met one in Djibouti faced with an impossible choice.",
+    "author": "Dave Eggers",
+    "fullImage": "http://placehold.it/800x600",
+    "article": "<p>This April, my Yemeni-American friend, Mokhtar, and I rented a car in Djibouti City and drove four hours to Obock, a tiny whitewashed village on the Gulf of Aden. When the Saudis began dropping bombs on Yemen, ostensibly to slow or to punish the Houthi takeover of the country, thousands of Yemenis had crossed the sea and found their way to Obock, a godforsaken town on the coast. We got there, and it was 124 degrees Fahrenheit.</p><br><p>When the war began, UNHCR had set up a refugee camp on a bluff outside Obock. By the time my friend and I arrived—a year and change after the bombing had started—the tents remained, but for the most part the only people left were poor Djiboutians who had taken up residence.</p><br><p>Twice a day, red sandstorms took over the camp, rendering everything opaque and sending its inhabitants into the darkness of their canvas dwellings.</p><br><p>Mokhtar and I wandered around Obock and met a young man who had nowhere to go. He emerged from one of the buildings wearing a Hollister T-shirt. He was Yemeni and had fled the war. Like many men of fighting age, he was recruited by the Houthis to fight the Saudis, but as a dental student, he wanted no part of the conflict. They gave him a gun; he sold it. They threatened his life, and he figured it was time to get going. He jumped onto a freighter headed to Djibouti and got off at Obock. He was one of the few Yemenis left in the port town. When he’d arrived, the Djiboutian government had taken his passport, and he couldn’t leave the UNHCR camp without it.</p><br><p>So one day Mokhtar and I went to UNHCR’s offices to ask about the passport. The scene at the gate of the compound was chaotic. Workers seemed to be opening and sorting a shipment of food. They were local Djiboutians hired by the U.N., and there was a white woman in local clothing, pink and sweating in the heat. Together, and with great commitment, they opened boxes and assessed what they had. White trucks came and went.</p><br><p>We were not granted an audience with the head of the local UNHCR operation. He eyed us warily from behind the gate and disappeared into the building. We had to go back to town and send a flurry of emails until we got an appointment later in the day. When we did, we presented the case of the young Yemeni dental student.</p><br><p>What are his options? we asked.</p><br><p>The UNHCR representative, a hardworking man sent to do an impossible task, had no constructive answers. Together, we parsed out the future of this human who had fled a war. He couldn’t go back to Yemen, because he would be targeted as an enemy of the Houthis; if he went back to Sanaa, he expected to be killed. He couldn’t live and work in Djibouti, because he was not legally allowed to exist outside the refugee camp. But the camp was nearly empty. It was a wretched place located in a wretched climate. And it would not be there forever.</p><br><p>What about asylum? we asked.</p><br><p>He could apply for asylum in Djibouti, the man said. He referenced the European Union’s Dublin Regulation, which states that the first country a refugee enters should be his or her de facto place of asylum.</p>",
+    "sponsor": {
+    	"name": "Chevron",
+    	"logo": "/assets/chevron-logo.jpg"
+    },
+    "social": [
+            {
+    	        "name" : "facebook",
+                "url" : "https://facebook.com/link",
+                "img" : "../../assets/icons/facebook.svg"
+            },{
+    	        "name" : "twitter",
+                "url" : "https://twitter.com/link",
+                "img" : "../../assets/icons/twitter.svg"
+            },{
+                "name" : "email",
+                "url" : "namehere@gmail.com",
+                "img" : "../../assets/icons/email.svg"
+            }
+    ]
+}]

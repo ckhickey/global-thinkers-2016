@@ -1,0 +1,17 @@
+main{
+    zoom: 1;
+}
+
+main:after{
+    content: '';
+    height: 0;
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+
+.wrapper{
+    max-width: 1000px;
+    width: 80%;
+    margin: 0 auto;
+}

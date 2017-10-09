@@ -1,0 +1,141 @@
+.essaybody {
+    max-width: 800px;
+    margin: 0em auto 0;
+}
+
+.photo{
+    margin-top: 2em;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    margin: 0px auto;
+    width: 120px;
+    height: 40px;
+}
+
+li {
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+
+h5 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: "Tiempos", Georgia, Times, serif;
+    text-transform: none;
+    margin: 0.25em auto 0.1em;
+}
+
+h1 {
+    font-size: 4.6em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.6em;
+    line-height: 1.3em;
+}
+
+article >>> p {
+    font-size: 1.2em;
+    line-height: 1.825rem;
+}
+
+article >>> em {
+    font-style: italic;
+}
+
+article >>> .pull-quote {
+    float: right;
+  width: 60%;
+  text-align: left;
+  margin: .5em -20% .5em 1.5em;
+  font-weight: 700;
+  font-size: 1.8em;
+  line-height: 1.1em;
+}
+
+dl {
+    padding-top: 0.5em;
+    padding-bottom: 1.2em;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    margin: 1em auto;
+}
+
+dl dt {
+    font-family: "Solido", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.0em;
+    float: left;
+}
+
+.social{
+    margin: 2em auto;
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 3.5em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+        line-height: 1.1em;
+    }
+
+    article >>> .pull-quote {
+        width: 60%;
+        margin-right: -10%;
+        font-size: 1.6em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .essay {
+        padding-bottom: 2em;
+        padding-top: 2em;
+    }
+
+    h1 {
+        font-size: 3.0em;
+    }
+
+    h3 {
+        font-size: 1.1em;
+    }
+
+    dl dt {
+        font-size: 0.75em;
+    }
+
+    article >>> p {
+        font-size: 1.0em;
+    }
+
+    article >>> .pull-quote {
+        /*width: 100%;
+        margin: 0.5em 0 1.5em;*/
+        display: none;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    dl {
+        padding-bottom: 1.9em;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+}

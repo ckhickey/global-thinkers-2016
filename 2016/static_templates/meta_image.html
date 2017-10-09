@@ -1,0 +1,9 @@
+{% if meta.image[0] %}
+  <meta property="og:image" content="{{ meta.image[0] }}">
+{% endif %}
+{% if meta.image[1] %}
+  <meta property="og:image:width" content="{{ meta.image[1] }}">
+{% endif %}
+{% if meta.image[2] %}
+  <meta property="og:image:height" content="{{ meta.image[2] }}">
+{% endif %}

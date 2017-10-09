@@ -1,0 +1,34 @@
+<app-header></app-header>
+<main [style.background]='color'>
+
+<div id="aarpWrapper">
+    <div class="viewport">
+        <h3>Underwritten By</h3>
+        <img class="aarplogo" src="assets/icons/AARP_logo.png" />
+        <h1>the global thinkers<br>lifetime achievement award</h1>
+        <ul>
+            <li>
+                <a href="http://www.facebook.com/sharer.php?u={{ getCurrentUrl() }}" target="_blank"><img src="assets/icons/facebook.svg" /></a>
+            </li>
+            <li>
+                <a href="http://twitter.com/share?text=For%20the%20first%20time%20%40ForeignPolicy%20announces%20%23GlobalThinkers%20Lifetime%20Achievement%20Awards.&url={{ getCurrentUrl() }}" target="_blank"><img src="assets/icons/twitter.svg" /></a>
+            </li>
+            <li>
+                <a href="mailto:?subject=Dr.%20Alfred%20Sommer%20-%20Global%20Thinker%20Lifetime%20Achievement%20Award%20Winner&body={{ getCurrentUrl() }}" target="_blank"><img src="assets/icons/email.svg" /></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="aarp-categories">
+        <dl *ngFor="let object of winners | slice:0:2">
+            <img *ngIf="object.image" class="winnerpic" src="{{ object.image[0] }}">
+
+            <dt>{{ object.name }}</dt>
+            <dd class="header">{{ object.title }}</dd>
+            <dd class="ddProfile" [innerHtml]="object.description"></dd>
+        </dl>
+    </div>
+</div>
+
+</main>
+<app-footer></app-footer>

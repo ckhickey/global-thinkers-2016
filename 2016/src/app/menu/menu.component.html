@@ -1,0 +1,68 @@
+<a class="menu-link" href="javascript:void(0);" (click)="this.openMenu()" aria-lable="menu">
+    <!--inline svg to allow style control-->
+    <svg x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve"><g><g><rect x="0.2" y="9.2" width="49.6" height="2"></rect></g><g><rect x="0.2" y="24.7" width="49.6" height="2"></rect></g><g><rect x="0.2" y="40.1" width="49.6" height="2"></rect></g></g></svg>
+</a>
+
+<nav [ngClass]="this.menuClasses">
+    <a class="menu-link" href="javascript:void(0);" (click)="this.openMenu()" aria-label="close menu">
+        <!--inline svg to allow style control-->
+        <svg viewBox="0 0 100 100" x="0px" y="0px"><path d="M87,13V87H13V13H87m8-8H5V95H95V5Z"></path><polygon points="37.27 70.03 30 62.76 42.73 50.03 30 37.3 37.27 30.03 50 42.76 62.73 30.03 70 37.3 57.27 50.03 70 62.75 62.72 70.02 50 57.3 37.27 70.03"></polygon></svg>
+    </a>
+    <h5 id="toptext">meet the thinkers</h5>
+    <h3 style="font-size:0.7em;">(Swipe left/right to see all categories)</h3>
+    <div class="global-thinkers">
+
+        <div class="viewport">
+            <dl *ngFor="let object of categories">
+                <dt>{{ object.title }}</dt>
+                <dd *ngFor="let person of object.entries">
+                    <a routerLink="/profile/{{ person.slug }}" (click)="this.openMenu()">{{ person.name }}</a>
+                </dd>
+            </dl>
+        </div>
+
+    </div>
+
+    <div class="sponsorbox wrapper">
+        <div class="innerwrapper borderpadding">
+            <h3 class="aarpH3">Underwritten by</h3>
+            <a routerLink="/aarp/" (click)="this.toggleClass( this.menuClasses, 'is-visible')"><img class="aarplogo" src="assets/icons/AARP_logo.png" /></a>
+            <h1><a routerLink="/aarp/" (click)="this.toggleClass( this.menuClasses, 'is-visible')">the global thinker lifetime achievement awards</a></h1>
+            <br>
+        </div>
+    </div>
+
+    <div class="essaybox wrapper">
+        <div class="innerwrapper">
+            <h5>essays</h5>
+            <ul>
+                <li class="tableCell">
+                    <a routerLink="/essay/the-case-for-optimism" (click)="this.toggleClass( this.menuClasses, 'is-visible')"><img src="https://foreignpolicymag.files.wordpress.com/2016/11/rothkopf.jpg" /></a>
+                    <h2 class="essayHed"><a routerLink="/essay/the-case-for-optimism" (click)="this.toggleClass( this.menuClasses, 'is-visible')">The Case for Optimism</a></h2>
+                    <p>The arc of history bends toward progress&mdash;and 2016 was no different.</p>
+                    <h3 class="essayAuthor"><strong>David Rothkopf</strong></h3>
+                </li>
+                <li class="tableCell">
+                    <a routerLink="/essay/the-only-way-forward" (click)="this.toggleClass( this.menuClasses, 'is-visible')"><img src="https://foreignpolicymag.files.wordpress.com/2016/11/slaughter.jpg" /></a>
+                    <h2 class="essayHed"><a routerLink="/essay/the-only-way-forward" (click)="this.toggleClass( this.menuClasses, 'is-visible')">The Only Way Forward</a></h2>
+                    <p>Can the new world order be saved by humanism?</p>
+                    <h3 class="essayAuthor"><strong>Anne-Marie Slaughter</strong></h3>
+                </li>
+                <li class="tableCell">
+                    <a routerLink="/essay/the-man-going-back" (click)="this.toggleClass( this.menuClasses, 'is-visible')"><img src="https://foreignpolicymag.files.wordpress.com/2016/11/eggers.jpg" /></a>
+                    <h2 class="essayHed"><a routerLink="/essay/the-man-going-back" (click)="this.toggleClass( this.menuClasses, 'is-visible')">The Man Going Back</a></h2>
+                    <p>Tens of millions of people are displaced around the world. I met one in Djibouti faced with an impossible choice.</p>
+                    <h3 class="essayAuthor"><strong>Dave Eggers</strong></h3>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="StatArchbox wrapper">
+        <div class="innerwrapper borderpadding" style="border-bottom:0;">
+            <a routerLink="/statistics" (click)="this.toggleClass( this.menuClasses, 'is-visible')"><h2>The 2016 Global Thinkers by the Numbers</h2></a>
+            <h5>archives</h5>
+            <h2><a href="http://2015globalthinkers.foreignpolicy.com" target="_blank">2015</a> | <a href="http://globalthinkers.foreignpolicy.com/" target="_blank">2014</a> | <a href="http://2013-global-thinkers.foreignpolicy.com/" target="_blank">2013</a></h2>
+        </div>
+    </div>
+</nav>

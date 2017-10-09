@@ -1,0 +1,111 @@
+header {
+    margin-bottom: 1.0em;
+}
+
+/*.wrapper{ position: relative; padding-bottom: 12em;}*/
+
+@media screen and (min-width: 600px){
+    .wrapper{ padding-bottom: 8em; }
+}
+
+li{
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+    margin-top: 2em;
+}
+
+li:nth-child(2n+1){
+    clear: left;
+}
+
+dl {
+    width: 90px;
+    margin: auto auto 0.5em;
+    display: block;
+}
+
+dd {
+    display: table-cell;
+}
+
+dd img {
+    width: 30px;
+    height: 30px;
+}
+
+.catProfile {
+    border-radius: 100%;
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-right: 2em;
+}
+
+.to-next-text {
+    float: right;
+    width: 70px;
+    line-height: 1.2em;
+}
+
+.new-cat {
+    bottom: 0;
+    left:50%;
+}
+
+.new-cat-img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.5em;
+    position: absolute;
+    bottom: -15%;
+    left: 50%;
+}
+
+h1 {
+    font-size: 3.0em;
+    text-transform: lowercase;
+}
+
+h2 {
+    font-family: "Solido Condensed", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+h2, h3 {
+    margin-bottom: 0.25em;
+}
+
+p >>> i {
+    font-style: italic;
+}
+
+#catTextbox {
+    display: table;
+}
+
+@media screen and (max-width: 800px) {
+    h3 {
+        font-size: 0.75em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    li {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .wrapper {
+        padding-top: 6em;
+        padding-bottom: 6em;
+    }
+}

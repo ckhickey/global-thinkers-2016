@@ -1,0 +1,11 @@
+{% if site_meta and site_meta.title %}
+  <meta property="og:site_name" value="{{ site_meta.title }}">
+{% elif site_meta and site_meta.site_title %}
+  <meta property="og:site_name" value="{{ site_meta.site_title }}">
+{% elif meta and meta.title %}
+  <meta property="og:site_name" value="{{ meta.title }}">
+{% elif page and page == "home" and title %}
+  <meta property="og:site_name" value="{{ title }}">
+{% else %}
+  <meta property="og:site_name" value="Foreign Policy Global Thinkers 2016">
+{% endif %}

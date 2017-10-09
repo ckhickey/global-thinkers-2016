@@ -1,0 +1,52 @@
+<div class="landing-categories">
+
+    <div class="viewport">
+
+        <a class="promo" *ngFor="let object of cats | slice:0:3" routerLink="/category/{{object.group}}" [style.background]="object.color">
+            <img src="{{ object.image }}" />
+            <h2 class="title">{{ object.title }}</h2>
+            <div [innerHtml]="object.description"></div>
+        </a>
+
+        <a routerLink="/essay/the-case-for-optimism" class="promo half-width essay">
+            <h5 class="content-type">essay</h5>
+            <h2 class="title">The Case for Optimism</h2>
+            <p class="description">The arc of history bends towards progress &mdash; and 2016 was no different.</p>
+            <p class="byline">By David Rothkopf</p>
+        </a>
+
+        <a routerLink="/aarp/" class="promo half-width aarp">
+            <p class="byline" style="font-size:0.6em;">Underwritten by</p>
+            <img class="aarplogo" src="assets/icons/AARP_logo.png" />
+            <h2 class="title">the global thinker lifetime achievement awards</h2>
+        </a>
+
+        <a class="promo" *ngFor="let object of cats | slice:3:6" routerLink="/category/{{object.group}}" [style.background]="object.color">
+            <img src="{{ object.image }}" />
+            <h2 class="title">{{ object.title }}</h2>
+            <div [innerHtml]="object.description"></div>
+        </a>
+
+        <a routerLink="/essay/the-only-way-forward" class="promo half-width essay">
+            <h5 class="content-type">essay</h5>
+            <h2 class="title">The Only Way Forward</h2>
+            <p class="description">Can the new world order be saved by humanism?</p>
+            <p class="byline">By Anne-Marie Slaughter</p>
+        </a>
+
+        <a routerLink="essay/the-man-going-back" class="promo half-width essay">
+            <h5 class="content-type">essay</h5>
+            <h2 class="title">The Man Going Back</h2>
+            <p class="description">Tens of millions of people are displaced around the world. I met one in Djibouti faced with an impossible choice.</p>
+            <p class="byline">By Dave Eggers</p>
+        </a>
+
+
+        <a class="promo" *ngFor="let object of cats | slice:6:9" routerLink="/category/{{object.group}}" [style.background]="object.color">
+            <img src="{{ object.image }}" />
+            <h2 class="title">{{ object.title }}</h2>
+            <div [innerHtml]="object.description"></div>
+        </a>
+    </div>
+
+</div>

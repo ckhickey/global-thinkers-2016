@@ -1,0 +1,36 @@
+{% extends "static_templates/master.html" %}
+{% block head %}
+  {{ super() }}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ForeignPolicy">
+
+  <meta property="og:site_name" value="The Case for Optimism">
+  <meta property="og:url" content="https://gt.foreignpolicy.com/2016/statistics">
+  <meta property="og:title" content="By the Numbers – Global Thinkers 2016">
+
+  <meta property="og:image" content="https://foreignpolicymag.files.wordpress.com/2016/12/gt_social.jpg">
+  <meta property="og:image:width" content="754">
+  <meta property="og:image:height" content="377">
+
+  <meta property="og:description" content="A statistical breakdown of our annual list of the world's leading thinkers.">
+  <meta name="description" content="A statistical breakdown of our annual list of the world's leading thinkers.">
+
+  <link rel="canonical" href="https://gt.foreignpolicy.com/2016/statistics">
+
+  <title>By the Numbers – Global Thinkers 2016</title>
+{% endblock %}
+
+{% block content %}
+  {{ super() }}
+  <h1>By the Numbers – Global Thinkers 2016</h1>
+  <h2>A statistical breakdown of our annual list of the world's leading thinkers.</h2>
+  <div class="statPics">
+      <dl>
+      <img class="statpic" src="https://foreignpolicymag.files.wordpress.com/2016/12/stats.png" />
+      <img class="statpic" src="https://foreignpolicymag.files.wordpress.com/2016/12/stats2.png" />
+      <img class="statpic" src="https://foreignpolicymag.files.wordpress.com/2016/12/stats3.png" />
+      <img class="statpic" src="https://foreignpolicymag.files.wordpress.com/2016/12/stats4.png" />
+      </dl>
+      <p>Of the 2016 Global Thinkers, 3 ages and 10 birthplaces could not be confirmed and therefore are not included in the above graphics.</p>
+  </div>
+{% endblock %}
